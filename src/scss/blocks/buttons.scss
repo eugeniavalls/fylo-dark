@@ -1,1 +1,9 @@
-
+.button {
+  font-family: var(--font-family-raleway);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  padding: 16px 81px;
+  background-image: var(--button-gradient);
+  border-radius: 50px;
+}

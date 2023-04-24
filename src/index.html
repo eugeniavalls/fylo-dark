@@ -2,13 +2,122 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>Dark mode</title>
   </head>
   <body>
+    <header class="header">
+      <div class="header__top">
+        <img class="header__logo" src="./assets/images/logo.svg" alt="logo" />
+        <p class="header__text">Dark mode</p>
+      </div>
+      <img
+        class="header__image"
+        src="./assets/images/illustration-intro.png"
+        alt="image-header"
+      />
+    </header>
+
+    <section class="section__introduction">
+      <h1 class="section__title">
+        All your files in one secure location, accessible anywhere.
+      </h1>
+      <p class="section__text">
+        Fylo stores all your most important files in one secure location. Access
+        them wherever you need, share and collaborate with friends family, and
+        co-workers.
+      </p>
+      <a class="button" href=""> Get Started</a>
+    </section>
+
+    <section class="section-icons">
+      <div class="container-icon">
+        <img
+          class="icon"
+          src="./assets/images/icon-access-anywhere.svg"
+          alt="icon-access"
+        />
+        <h2 class="section-icons__title">Access your files, anywhere</h2>
+        <p class="section-icons__text">
+          The ability to use a smartphone, tablet, or computer to access your
+          account means your files follow you everywhere.
+        </p>
+      </div>
+      <div class="container-icon">
+        <img
+          class="icon"
+          src="./assets/images/icon-security.svg"
+          alt="icon-security"
+        />
+        <h2 class="section-icons__title">Security you can trust</h2>
+        <p class="section-icons__text">
+          2-factor authentication and user-controlled encryption are just a
+          couple of the security features we allow to help secure your files.
+        </p>
+      </div>
+      <div class="container-icon">
+        <img
+          class="icon"
+          src="./assets/images/icon-collaboration.svg"
+          alt="icon-collaboration"
+        />
+        <h2 class="section-icons__title">Real-time collaboration</h2>
+        <p class="section-icons__text">
+          Securely share files and folders with friends, family and colleagues
+          for live collaboration. No email attachments required.
+        </p>
+      </div>
+      <div class="container-icon">
+        <img
+          class="icon"
+          src="./assets/images/icon-any-file.svg"
+          alt="icon-any-file"
+        />
+        <h2 class="section-icons__title">Store any type of file</h2>
+        <p class="section-icons__text">
+          Whether you're sharing holidays photos or work documents, Fylo has you
+          covered allowing for all file types to be securely stored and shared.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-ilustration">
+      <img
+        class="section-ilustration__image"
+        src="./assets/images/illustration-stay-productive.png"
+        alt="image-stay-productive"
+      />
+      <div class="section-ilustration__text">
+        <h2 class="title">Stay productive, wherever you are</h2>
+        <p class="text">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+        </p>
+        <p class="text">
+          Securely share files and folders with friends, family and colleagues
+          for live collaboration. No email attachments required.
+        </p>
+        <div class="link">
+          <a class="link__text" href="#">See how Fylo works</a>
+          <img
+            class="link__arrow"
+            src="./assets/images/icon-arrow.svg"
+            alt="arrow"
+          />
+        </div>
+      </div>
+    </section>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
