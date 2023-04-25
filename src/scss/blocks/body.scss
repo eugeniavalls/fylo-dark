@@ -1,5 +1,16 @@
 html {
 }
+
 body {
-  background-color: var(--background-color);
+  background-image: var(--background-gradient);
+}
+
+body.light {
+  --background-gradient: linear-gradient(#ffffff, #d4d4d4);
+  --white: #1b2330;
+  --font-family-open-sans: "Open Sans", sans-serif;
+  --font-family-raleway: "Raleway", sans-serif;
+  --button-gradient: linear-gradient(#63e1d9, #34a0cd);
+  --color-primary: #62e0d9;
+  --color-secundary: #b3b3b3;
 }
