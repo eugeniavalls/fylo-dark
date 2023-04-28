@@ -1,3 +1,5 @@
+@use "../mixins/responsive.scss" as *;
+
 .section-icons {
   display: flex;
   flex-direction: column;
@@ -5,12 +7,22 @@
   gap: 5rem;
   margin-bottom: 160px;
 
+  @include responsive(desktop) {
+    display: grid;
+    grid-template-columns: 360px 360px;  
+    grid-template-rows: 215px 215px;  
+    align-items: center;
+    justify-content: center;
+    gap: 154px;
+  }
+
   &__title {
     font-family: var(--font-family-raleway);
     font-weight: 700;
     color: var(--white);
     margin: 0;
     margin-bottom: 8px;
+
   }
 
   &__text {
