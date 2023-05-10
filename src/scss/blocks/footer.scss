@@ -2,72 +2,123 @@
 
 @use "../mixins/responsive.scss" as *;
 
-.section__footer{
-    padding: 0 28px;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-
-    @include responsive(desktop) {
-        flex-direction: row;
-        justify-content: center;
-        padding: 0 310px 0 120px;
-      }
-
+.footer {
+  @include responsive(desktop) {
+    padding: 170px 100px 55px 100px;
+  }
 }
 
-.footer__logo{
-    width: 110px;
-    padding-left: 10px;
-    margin-bottom: 35px;
+.section__footer {
+  padding: 0 28px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
 
-    @include responsive(desktop) {
+  @include responsive(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  width: 110px;
+  padding-left: 28px;
+  margin-bottom: 35px;
+
+  @include responsive(desktop) {
     padding-left: 0;
     margin-bottom: 50px;
-    margin-left: 120px;
-    }
+    margin-left: 0;
+  }
 }
 
-.icons{
-    margin-bottom: 56px;
+.icons {
+  margin-bottom: 56px;
 
-    &__container{
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 16px;
+  @include responsive(desktop) {
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 379px 170px;
+    grid-template-rows: 20px;
+    gap: 3rem;
+  }
 
-        @include responsive(desktop) {
-            align-items: start;
-            width: 380px;
-            height: 70px;
-        }
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @include responsive(desktop) {
+      align-items: start;
+      width: 380px;
+      height: 70px;
+      gap: 2.5rem;
     }
-    
-    &__container--text{
-        font-family: var(--font-family-open-sans);
-        font-size: 17px;
-        line-height: 24px;
-        color: var(--white);
+
+    &--ubication {
+      @include responsive(desktop) {
+        align-items: start;
+      }
     }
-    
+
+    &--mail {
+      @include responsive(desktop) {
+        grid-column: 2/3;
+        grid-row: 2/1;
+      }
+    }
+
+    &--phone {
+      @include responsive(desktop) {
+        grid-column: 2/3;
+        grid-row: 3/2;
+      }
+    }
+  }
+
+  &__container--text {
+    font-family: var(--font-family-open-sans);
+    font-size: 17px;
+    line-height: 24px;
+    color: var(--white);
+
+    @include responsive(desktop) {
+      margin: 0;
+    }
+  }
 }
 
-.blog__container{
-    margin-bottom: 48px;
+.blog__container {
+  margin-bottom: 48px;
 
-    &--text{
-        color: var(--white);
-        font-family: var(--font-family-open-sans);
-        font-size: 17px;
-        margin-bottom: 25px;
-    }
-}
+  @include responsive(desktop) {
+    margin-bottom: 0;
+  }
 
-.privacity__container--text{
+  &--text {
     color: var(--white);
     font-family: var(--font-family-open-sans);
     font-size: 17px;
     margin-bottom: 25px;
+
+    @include responsive(desktop) {
+      margin: 0;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.privacity__container--text {
+  color: var(--white);
+  font-family: var(--font-family-open-sans);
+  font-size: 17px;
+  margin-bottom: 25px;
+
+  @include responsive(desktop) {
+    margin: 0;
+  }
 }
