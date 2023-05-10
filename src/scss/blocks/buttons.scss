@@ -35,7 +35,7 @@
     color: var(--color-text-button);
 
     @include responsive(desktop) {
-      padding: 20px 300px 20px 38px ;
+      padding: 20px 200px 20px 38px;
       font-size: 12px;
     }
   }

@@ -4,7 +4,11 @@
 
 .footer {
   @include responsive(desktop) {
-    padding: 170px 100px 55px 100px;
+    padding: 170px 100px 50px 100px;
+    background-color: #0c141f;
+    position: relative;
+    height: 440px;
+    z-index: -1;
   }
 }
 
@@ -84,7 +88,7 @@
     font-family: var(--font-family-open-sans);
     font-size: 17px;
     line-height: 24px;
-    color: var(--white);
+    color: white;
 
     @include responsive(desktop) {
       margin: 0;
@@ -100,7 +104,7 @@
   }
 
   &--text {
-    color: var(--white);
+    color: white;
     font-family: var(--font-family-open-sans);
     font-size: 17px;
     margin-bottom: 25px;
@@ -113,12 +117,13 @@
 }
 
 .privacity__container--text {
-  color: var(--white);
+  color: white;
   font-family: var(--font-family-open-sans);
   font-size: 17px;
   margin-bottom: 25px;
 
   @include responsive(desktop) {
     margin: 0;
+    margin-bottom: 25px;
   }
 }
